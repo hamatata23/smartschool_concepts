@@ -1,0 +1,48 @@
+{
+  "split": {
+    "training_rows": 400,
+    "test_rows": 100,
+    "seed": 42
+  },
+  "training": {
+    "target": "final_score",
+    "rows": 400,
+    "solver": "lstsq",
+    "l2": 0.0,
+    "rank": 6,
+    "columns": 6,
+    "iterations": 0,
+    "converged": true
+  },
+  "test": {
+    "bounded_predictions": {
+      "mae": 3.5027906053300035,
+      "rmse": 4.39026698039558,
+      "r2": 0.8620807754752117,
+      "rows": 100
+    },
+    "raw_predictions": {
+      "mae": 3.5027906053300035,
+      "rmse": 4.39026698039558,
+      "r2": 0.8620807754752117,
+      "rows": 100
+    }
+  },
+  "mean_baseline": {
+    "mae": 9.232276,
+    "rmse": 11.828020749051806,
+    "r2": -0.0010761146738511584,
+    "rows": 100
+  },
+  "coefficients_original_units": {
+    "intercept": 2.2814824208870306,
+    "weights": {
+      "study_hours_per_week": 0.7234227170280148,
+      "attendance_percent": 0.16421540274078966,
+      "previous_score": 0.4354439761814428,
+      "sleep_hours_per_night": 1.281686716151256,
+      "assignments_completed_percent": 0.11644760215052694
+    }
+  },
+  "warnings": []
+}

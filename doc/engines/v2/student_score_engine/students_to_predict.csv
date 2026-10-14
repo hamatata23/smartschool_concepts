@@ -1,0 +1,4 @@
+student_id,study_hours_per_week,attendance_percent,previous_score,sleep_hours_per_night,assignments_completed_percent
+example_001,15,90,75,7,85
+example_002,8,75,60,6,65
+example_003,,85,70,7,80

@@ -1,0 +1,4 @@
+student_id,study_hours_per_week,attendance_percent,previous_score,sleep_hours_per_night,assignments_completed_percent,predicted_score,raw_score,clipped,imputed_features,outside_training_range
+example_001,15,90,75,7,85,79.4403608324401,79.4403608324401,False,,
+example_002,8,75,60,6,65,61.770872370248725,61.770872370248725,False,,
+example_003,,85,70,7,80,76.15425897290672,76.15425897290672,False,study_hours_per_week,
