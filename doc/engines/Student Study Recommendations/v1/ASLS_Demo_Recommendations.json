@@ -1,0 +1,751 @@
+{
+  "teacher_summary": {
+    "students": 2,
+    "class_id": 10,
+    "week_start": "2026-10-19",
+    "subjects": [
+      {
+        "subject_id": 3,
+        "subject": "Physics",
+        "students": 2,
+        "students_below_70": 1,
+        "average_observed_mastery": 74.88,
+        "total_recommended_hours": 5.5,
+        "recommended_teacher_action": "Offer a small-group diagnostic and targeted exercises"
+      },
+      {
+        "subject_id": 1,
+        "subject": "English",
+        "students": 2,
+        "students_below_70": 1,
+        "average_observed_mastery": 74.32,
+        "total_recommended_hours": 3.0,
+        "recommended_teacher_action": "Offer a small-group diagnostic and targeted exercises"
+      },
+      {
+        "subject_id": 2,
+        "subject": "Mathematics",
+        "students": 2,
+        "students_below_70": 1,
+        "average_observed_mastery": 75.91,
+        "total_recommended_hours": 2.5,
+        "recommended_teacher_action": "Offer a small-group diagnostic and targeted exercises"
+      },
+      {
+        "subject_id": 4,
+        "subject": "Chemistry",
+        "students": 2,
+        "students_below_70": 0,
+        "average_observed_mastery": 72.39,
+        "total_recommended_hours": 5.5,
+        "recommended_teacher_action": "Provide maintenance practice and extension tasks"
+      },
+      {
+        "subject_id": 5,
+        "subject": "History",
+        "students": 2,
+        "students_below_70": 0,
+        "average_observed_mastery": 79.98,
+        "total_recommended_hours": 2.0,
+        "recommended_teacher_action": "Provide maintenance practice and extension tasks"
+      }
+    ]
+  },
+  "student_plans": [
+    {
+      "engine_version": "1.0.0",
+      "student_id": 101,
+      "student_name": "Demo Student A",
+      "class_id": 10,
+      "week_start": "2026-10-19",
+      "week_end": "2026-10-25",
+      "target_score": 85,
+      "weekly_limit_minutes": 600,
+      "daily_limit_minutes": 120,
+      "total_recommended_minutes": 570,
+      "unallocated_weekly_limit_minutes": 30,
+      "allocation_policy": {
+        "slot_minutes": 30,
+        "break_minutes": 5,
+        "max_subject_share": 0.55,
+        "diminishing_returns_tau_minutes": 180.0
+      },
+      "allocations": [
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "mastery_score": 59.65,
+          "trend_points": -2,
+          "grades_count": 3,
+          "class_minutes": 120,
+          "next_assessment": "2026-10-23",
+          "priority": 1.0569,
+          "adaptive_multiplier": 0.8567,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 59.6% is below 85% target",
+            "Upcoming assessment in 4 day(s)",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback",
+            "Short spaced review"
+          ],
+          "recommended_minutes": 210
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "mastery_score": 71.69,
+          "trend_points": 1,
+          "grades_count": 3,
+          "class_minutes": 60,
+          "next_assessment": "2026-10-29",
+          "priority": 0.795,
+          "adaptive_multiplier": 1.0155,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 71.7% is below 85% target",
+            "Upcoming assessment in 10 day(s)",
+            "Only 60 classroom minutes scheduled this week",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Active recall",
+            "Targeted exercises",
+            "Review mistakes"
+          ],
+          "recommended_minutes": 180
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "mastery_score": 68.71,
+          "trend_points": -6,
+          "grades_count": 3,
+          "class_minutes": 120,
+          "next_assessment": null,
+          "priority": 0.6446,
+          "adaptive_multiplier": 0.8,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 68.7% is below 85% target",
+            "Recent grade declined by 6.0 points",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Active recall",
+            "Targeted exercises",
+            "Review mistakes"
+          ],
+          "recommended_minutes": 120
+        },
+        {
+          "subject_id": 5,
+          "subject": "History",
+          "mastery_score": 84.69,
+          "trend_points": 1,
+          "grades_count": 3,
+          "class_minutes": 60,
+          "next_assessment": null,
+          "priority": 0.3658,
+          "adaptive_multiplier": 1.0269,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 84.7% is below 85% target",
+            "Only 60 classroom minutes scheduled this week",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Active recall",
+            "Targeted exercises",
+            "Review mistakes"
+          ],
+          "recommended_minutes": 30
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "mastery_score": 90.1,
+          "trend_points": 2,
+          "grades_count": 3,
+          "class_minutes": 60,
+          "next_assessment": "2026-11-03",
+          "priority": 0.3334,
+          "adaptive_multiplier": 0.9526,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Maintenance of current mastery 90.1%",
+            "Only 60 classroom minutes scheduled this week",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Spaced retrieval",
+            "Challenge problems",
+            "Brief maintenance quiz"
+          ],
+          "recommended_minutes": 30
+        }
+      ],
+      "sessions": [
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-19T18:00",
+          "end_at": "2026-10-19T18:30",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-19T18:35",
+          "end_at": "2026-10-19T19:05",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-19T19:10",
+          "end_at": "2026-10-19T19:40",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-20T18:00",
+          "end_at": "2026-10-20T18:30",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "start_at": "2026-10-20T18:35",
+          "end_at": "2026-10-20T19:05",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-20T19:10",
+          "end_at": "2026-10-20T19:40",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-21T15:00",
+          "end_at": "2026-10-21T15:30",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-21T16:30",
+          "end_at": "2026-10-21T17:00",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-22T18:00",
+          "end_at": "2026-10-22T18:30",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "start_at": "2026-10-22T18:35",
+          "end_at": "2026-10-22T19:05",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-22T19:10",
+          "end_at": "2026-10-22T19:40",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-23T18:00",
+          "end_at": "2026-10-23T18:30",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-24T09:00",
+          "end_at": "2026-10-24T09:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "start_at": "2026-10-24T09:35",
+          "end_at": "2026-10-24T10:05",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 5,
+          "subject": "History",
+          "start_at": "2026-10-24T10:10",
+          "end_at": "2026-10-24T10:40",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "start_at": "2026-10-24T10:45",
+          "end_at": "2026-10-24T11:15",
+          "minutes": 30,
+          "methods": [
+            "Spaced retrieval",
+            "Challenge problems"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-25T10:00",
+          "end_at": "2026-10-25T10:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "start_at": "2026-10-25T10:35",
+          "end_at": "2026-10-25T11:05",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-25T11:10",
+          "end_at": "2026-10-25T11:40",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "engine_version": "1.0.0",
+      "student_id": 102,
+      "student_name": "Demo Student B",
+      "class_id": 10,
+      "week_start": "2026-10-19",
+      "week_end": "2026-10-25",
+      "target_score": 85,
+      "weekly_limit_minutes": 540,
+      "daily_limit_minutes": 120,
+      "total_recommended_minutes": 540,
+      "unallocated_weekly_limit_minutes": 0,
+      "allocation_policy": {
+        "slot_minutes": 30,
+        "break_minutes": 5,
+        "max_subject_share": 0.55,
+        "diminishing_returns_tau_minutes": 180.0
+      },
+      "allocations": [
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "mastery_score": 58.55,
+          "trend_points": -4,
+          "grades_count": 3,
+          "class_minutes": 60,
+          "next_assessment": "2026-11-03",
+          "priority": 0.7992,
+          "adaptive_multiplier": 0.8,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 58.5% is below 85% target",
+            "Recent grade declined by 4.0 points",
+            "Only 60 classroom minutes scheduled this week",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Worked examples",
+            "Guided problem practice",
+            "Self-test with corrections"
+          ],
+          "recommended_minutes": 150
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "mastery_score": 73.1,
+          "trend_points": 2,
+          "grades_count": 3,
+          "class_minutes": 60,
+          "next_assessment": "2026-10-29",
+          "priority": 0.776,
+          "adaptive_multiplier": 1.0283,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 73.1% is below 85% target",
+            "Upcoming assessment in 10 day(s)",
+            "Only 60 classroom minutes scheduled this week",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Active recall",
+            "Targeted exercises",
+            "Review mistakes"
+          ],
+          "recommended_minutes": 150
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "mastery_score": 90.1,
+          "trend_points": 2,
+          "grades_count": 3,
+          "class_minutes": 120,
+          "next_assessment": "2026-10-23",
+          "priority": 0.6544,
+          "adaptive_multiplier": 0.9816,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Maintenance of current mastery 90.1%",
+            "Upcoming assessment in 4 day(s)",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback",
+            "Short spaced review"
+          ],
+          "recommended_minutes": 120
+        },
+        {
+          "subject_id": 5,
+          "subject": "History",
+          "mastery_score": 75.28,
+          "trend_points": 3,
+          "grades_count": 3,
+          "class_minutes": 60,
+          "next_assessment": null,
+          "priority": 0.581,
+          "adaptive_multiplier": 1.0673,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 75.3% is below 85% target",
+            "Only 60 classroom minutes scheduled this week",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Active recall",
+            "Targeted exercises",
+            "Review mistakes"
+          ],
+          "recommended_minutes": 90
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "mastery_score": 83.1,
+          "trend_points": 2,
+          "grades_count": 3,
+          "class_minutes": 120,
+          "next_assessment": null,
+          "priority": 0.3183,
+          "adaptive_multiplier": 0.9418,
+          "learning_observations": 4,
+          "student_learning_observations": 2,
+          "reasons": [
+            "Current mastery 83.1% is below 85% target",
+            "Adjusted conservatively using past logged study/grade associations"
+          ],
+          "methods": [
+            "Active recall",
+            "Targeted exercises",
+            "Review mistakes"
+          ],
+          "recommended_minutes": 30
+        }
+      ],
+      "sessions": [
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-19T18:00",
+          "end_at": "2026-10-19T18:30",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "start_at": "2026-10-19T18:35",
+          "end_at": "2026-10-19T19:05",
+          "minutes": 30,
+          "methods": [
+            "Worked examples",
+            "Guided problem practice"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-19T19:10",
+          "end_at": "2026-10-19T19:40",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 5,
+          "subject": "History",
+          "start_at": "2026-10-20T18:00",
+          "end_at": "2026-10-20T18:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "start_at": "2026-10-20T18:35",
+          "end_at": "2026-10-20T19:05",
+          "minutes": 30,
+          "methods": [
+            "Worked examples",
+            "Guided problem practice"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-20T19:10",
+          "end_at": "2026-10-20T19:40",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-21T15:00",
+          "end_at": "2026-10-21T15:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-21T16:30",
+          "end_at": "2026-10-21T17:00",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "start_at": "2026-10-22T18:00",
+          "end_at": "2026-10-22T18:30",
+          "minutes": 30,
+          "methods": [
+            "Worked examples",
+            "Guided problem practice"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-22T18:35",
+          "end_at": "2026-10-22T19:05",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 3,
+          "subject": "Physics",
+          "start_at": "2026-10-22T19:10",
+          "end_at": "2026-10-22T19:40",
+          "minutes": 30,
+          "methods": [
+            "Timed retrieval quiz",
+            "Practice mistakes and feedback"
+          ]
+        },
+        {
+          "subject_id": 5,
+          "subject": "History",
+          "start_at": "2026-10-23T18:00",
+          "end_at": "2026-10-23T18:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-24T09:00",
+          "end_at": "2026-10-24T09:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "start_at": "2026-10-24T09:35",
+          "end_at": "2026-10-24T10:05",
+          "minutes": 30,
+          "methods": [
+            "Worked examples",
+            "Guided problem practice"
+          ]
+        },
+        {
+          "subject_id": 5,
+          "subject": "History",
+          "start_at": "2026-10-24T10:10",
+          "end_at": "2026-10-24T10:40",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 4,
+          "subject": "Chemistry",
+          "start_at": "2026-10-25T10:00",
+          "end_at": "2026-10-25T10:30",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        },
+        {
+          "subject_id": 1,
+          "subject": "English",
+          "start_at": "2026-10-25T10:35",
+          "end_at": "2026-10-25T11:05",
+          "minutes": 30,
+          "methods": [
+            "Worked examples",
+            "Guided problem practice"
+          ]
+        },
+        {
+          "subject_id": 2,
+          "subject": "Mathematics",
+          "start_at": "2026-10-25T11:10",
+          "end_at": "2026-10-25T11:40",
+          "minutes": 30,
+          "methods": [
+            "Active recall",
+            "Targeted exercises"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "student_id": "17924d43-cb87-53bc-8f19-d32fb1bb7fa5",
+  "model_version": "2PL-MAP-v1",
+  "index_definition": "100 * sigmoid(theta), for a reference item with a=1 and b=0; not an exam grade or percentile",
+  "uncertainty": "Approximate 95% Laplace posterior intervals; subject/item calibration not externally validated",
+  "subjects": [
+    {
+      "theta": -0.4533,
+      "standard_error": 0.5326,
+      "ci95_theta": [
+        -1.4973,
+        0.5906
+      ],
+      "ability_index_pct": 38.86,
+      "ci95_index_pct": [
+        18.28,
+        64.35
+      ],
+      "response_count": 12,
+      "correct_count": 4,
+      "observed_accuracy_pct": 33.33,
+      "subject": "Maths",
+      "evidence_status": "exploratory_coverage",
+      "provisional_item_count": 12,
+      "topics": [
+        {
+          "theta": -0.525,
+          "standard_error": 0.7414,
+          "ci95_theta": [
+            -1.9781,
+            0.9282
+          ],
+          "ability_index_pct": 37.17,
+          "ci95_index_pct": [
+            12.15,
+            71.67
+          ],
+          "response_count": 4,
+          "correct_count": 1,
+          "observed_accuracy_pct": 25.0,
+          "topic": "Algebra",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": -0.525,
+          "standard_error": 0.7414,
+          "ci95_theta": [
+            -1.9781,
+            0.9282
+          ],
+          "ability_index_pct": 37.17,
+          "ci95_index_pct": [
+            12.15,
+            71.67
+          ],
+          "response_count": 4,
+          "correct_count": 1,
+          "observed_accuracy_pct": 25.0,
+          "topic": "Geometry",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": 0.154,
+          "standard_error": 0.7084,
+          "ci95_theta": [
+            -1.2345,
+            1.5425
+          ],
+          "ability_index_pct": 53.84,
+          "ci95_index_pct": [
+            22.54,
+            82.38
+          ],
+          "response_count": 4,
+          "correct_count": 2,
+          "observed_accuracy_pct": 50.0,
+          "topic": "Statistics",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        }
+      ],
+      "recommended_topics_to_assess": [
+        "Algebra",
+        "Geometry",
+        "Statistics"
+      ]
+    },
+    {
+      "theta": -0.7182,
+      "standard_error": 0.5531,
+      "ci95_theta": [
+        -1.8023,
+        0.366
+      ],
+      "ability_index_pct": 32.78,
+      "ci95_index_pct": [
+        14.16,
+        59.05
+      ],
+      "response_count": 12,
+      "correct_count": 3,
+      "observed_accuracy_pct": 25.0,
+      "subject": "Physics",
+      "evidence_status": "exploratory_coverage",
+      "provisional_item_count": 12,
+      "topics": [
+        {
+          "theta": -0.4161,
+          "standard_error": 0.7346,
+          "ci95_theta": [
+            -1.8558,
+            1.0237
+          ],
+          "ability_index_pct": 39.75,
+          "ci95_index_pct": [
+            13.52,
+            73.57
+          ],
+          "response_count": 4,
+          "correct_count": 1,
+          "observed_accuracy_pct": 25.0,
+          "topic": "Mechanics",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": -0.9838,
+          "standard_error": 0.7745,
+          "ci95_theta": [
+            -2.5018,
+            0.5343
+          ],
+          "ability_index_pct": 27.21,
+          "ci95_index_pct": [
+            7.57,
+            63.05
+          ],
+          "response_count": 4,
+          "correct_count": 0,
+          "observed_accuracy_pct": 0.0,
+          "topic": "Electricity",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": 0.0024,
+          "standard_error": 0.7135,
+          "ci95_theta": [
+            -1.3962,
+            1.4009
+          ],
+          "ability_index_pct": 50.06,
+          "ci95_index_pct": [
+            19.84,
+            80.23
+          ],
+          "response_count": 4,
+          "correct_count": 2,
+          "observed_accuracy_pct": 50.0,
+          "topic": "Waves",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        }
+      ],
+      "recommended_topics_to_assess": [
+        "Electricity",
+        "Mechanics",
+        "Waves"
+      ]
+    },
+    {
+      "theta": 0.7987,
+      "standard_error": 0.4991,
+      "ci95_theta": [
+        -0.1795,
+        1.7769
+      ],
+      "ability_index_pct": 68.97,
+      "ci95_index_pct": [
+        45.52,
+        85.53
+      ],
+      "response_count": 12,
+      "correct_count": 8,
+      "observed_accuracy_pct": 66.67,
+      "subject": "English",
+      "evidence_status": "exploratory_coverage",
+      "provisional_item_count": 12,
+      "topics": [
+        {
+          "theta": 0.254,
+          "standard_error": 0.7059,
+          "ci95_theta": [
+            -1.1296,
+            1.6376
+          ],
+          "ability_index_pct": 56.32,
+          "ci95_index_pct": [
+            24.42,
+            83.72
+          ],
+          "response_count": 4,
+          "correct_count": 2,
+          "observed_accuracy_pct": 50.0,
+          "topic": "Grammar",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": 0.5512,
+          "standard_error": 0.7029,
+          "ci95_theta": [
+            -0.8266,
+            1.929
+          ],
+          "ability_index_pct": 63.44,
+          "ci95_index_pct": [
+            30.44,
+            87.31
+          ],
+          "response_count": 4,
+          "correct_count": 3,
+          "observed_accuracy_pct": 75.0,
+          "topic": "Vocabulary",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": 0.7991,
+          "standard_error": 0.7063,
+          "ci95_theta": [
+            -0.5851,
+            2.1834
+          ],
+          "ability_index_pct": 68.98,
+          "ci95_index_pct": [
+            35.77,
+            89.87
+          ],
+          "response_count": 4,
+          "correct_count": 3,
+          "observed_accuracy_pct": 75.0,
+          "topic": "Reading",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        }
+      ],
+      "recommended_topics_to_assess": [
+        "Grammar",
+        "Vocabulary",
+        "Reading"
+      ]
+    },
+    {
+      "theta": -1.1088,
+      "standard_error": 0.5897,
+      "ci95_theta": [
+        -2.2646,
+        0.047
+      ],
+      "ability_index_pct": 24.81,
+      "ci95_index_pct": [
+        9.41,
+        51.17
+      ],
+      "response_count": 12,
+      "correct_count": 2,
+      "observed_accuracy_pct": 16.67,
+      "subject": "Chemistry",
+      "evidence_status": "exploratory_coverage",
+      "provisional_item_count": 12,
+      "topics": [
+        {
+          "theta": -0.9838,
+          "standard_error": 0.7745,
+          "ci95_theta": [
+            -2.5018,
+            0.5343
+          ],
+          "ability_index_pct": 27.21,
+          "ci95_index_pct": [
+            7.57,
+            63.05
+          ],
+          "response_count": 4,
+          "correct_count": 0,
+          "observed_accuracy_pct": 0.0,
+          "topic": "Atomic Structure",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": -0.525,
+          "standard_error": 0.7414,
+          "ci95_theta": [
+            -1.9781,
+            0.9282
+          ],
+          "ability_index_pct": 37.17,
+          "ci95_index_pct": [
+            12.15,
+            71.67
+          ],
+          "response_count": 4,
+          "correct_count": 1,
+          "observed_accuracy_pct": 25.0,
+          "topic": "Stoichiometry",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": -0.525,
+          "standard_error": 0.7414,
+          "ci95_theta": [
+            -1.9781,
+            0.9282
+          ],
+          "ability_index_pct": 37.17,
+          "ci95_index_pct": [
+            12.15,
+            71.67
+          ],
+          "response_count": 4,
+          "correct_count": 1,
+          "observed_accuracy_pct": 25.0,
+          "topic": "Acids and Bases",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        }
+      ],
+      "recommended_topics_to_assess": [
+        "Atomic Structure",
+        "Acids and Bases",
+        "Stoichiometry"
+      ]
+    },
+    {
+      "theta": 0.0293,
+      "standard_error": 0.5058,
+      "ci95_theta": [
+        -0.9621,
+        1.0206
+      ],
+      "ability_index_pct": 50.73,
+      "ci95_index_pct": [
+        27.65,
+        73.51
+      ],
+      "response_count": 12,
+      "correct_count": 5,
+      "observed_accuracy_pct": 41.67,
+      "subject": "Biology",
+      "evidence_status": "exploratory_coverage",
+      "provisional_item_count": 12,
+      "topics": [
+        {
+          "theta": 0.7991,
+          "standard_error": 0.7063,
+          "ci95_theta": [
+            -0.5851,
+            2.1834
+          ],
+          "ability_index_pct": 68.98,
+          "ci95_index_pct": [
+            35.77,
+            89.87
+          ],
+          "response_count": 4,
+          "correct_count": 3,
+          "observed_accuracy_pct": 75.0,
+          "topic": "Cell Biology",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": -0.9838,
+          "standard_error": 0.7745,
+          "ci95_theta": [
+            -2.5018,
+            0.5343
+          ],
+          "ability_index_pct": 27.21,
+          "ci95_index_pct": [
+            7.57,
+            63.05
+          ],
+          "response_count": 4,
+          "correct_count": 0,
+          "observed_accuracy_pct": 0.0,
+          "topic": "Genetics",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        },
+        {
+          "theta": 0.154,
+          "standard_error": 0.7084,
+          "ci95_theta": [
+            -1.2345,
+            1.5425
+          ],
+          "ability_index_pct": 53.84,
+          "ci95_index_pct": [
+            22.54,
+            82.38
+          ],
+          "response_count": 4,
+          "correct_count": 2,
+          "observed_accuracy_pct": 50.0,
+          "topic": "Ecology",
+          "evidence_status": "limited_evidence",
+          "provisional_item_count": 4
+        }
+      ],
+      "recommended_topics_to_assess": [
+        "Genetics",
+        "Ecology",
+        "Cell Biology"
+      ]
+    }
+  ],
+  "example_data": "DEMONSTRATION ONLY: synthetic unvalidated items and generated answers"
+}
