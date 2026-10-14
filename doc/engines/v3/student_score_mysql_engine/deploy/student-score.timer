@@ -1,0 +1,11 @@
+[Unit]
+Description=Check student data every hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=60
+Unit=student-score.service
+
+[Install]
+WantedBy=timers.target

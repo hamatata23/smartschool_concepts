@@ -1,0 +1,44 @@
+{
+  "pipeline_name": "school_math_grade8",
+  "state_dir": "./var/math_grade8",
+  "source_table": "tbl_student_score",
+  "prediction_table": "tbl_student_prediction_score",
+  "columns": {
+    "row_id": "id",
+    "student_id": "student_id",
+    "target_date": "exam_date",
+    "features_as_of": "features_as_of",
+    "label_available_at": "score_recorded_at",
+    "target": "final_score"
+  },
+  "features": [
+    "study_hours_per_week",
+    "attendance_percent",
+    "previous_score",
+    "sleep_hours_per_night",
+    "assignments_completed_percent"
+  ],
+  "feature_ranges": {
+    "study_hours_per_week": [0, 168],
+    "attendance_percent": [0, 100],
+    "previous_score": [0, 100],
+    "sleep_hours_per_night": [0, 24],
+    "assignments_completed_percent": [0, 100]
+  },
+  "filter_equals": {"subject": "mathematics", "grade_level": 8},
+  "score_min": 0,
+  "score_max": 100,
+  "max_rows": 200000,
+  "training": {
+    "validation_fraction": 0.2,
+    "min_training_rows": 50,
+    "min_validation_rows": 20,
+    "max_validation_mae": 12,
+    "require_better_than_mean_baseline": true,
+    "l2": 0.01,
+    "solver": "lstsq",
+    "learning_rate": 0.05,
+    "max_iterations": 50000,
+    "tolerance": 1e-9
+  }
+}

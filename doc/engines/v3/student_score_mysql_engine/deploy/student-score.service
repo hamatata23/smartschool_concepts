@@ -1,0 +1,21 @@
+[Unit]
+Description=Train from actual student results and update MySQL score forecasts
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=scoreengine
+Group=scoreengine
+WorkingDirectory=/opt/student_score_mysql_engine
+ExecStart=/opt/student_score_mysql_engine/.venv/bin/python /opt/student_score_mysql_engine/mysql_engine.py run-once --config /opt/student_score_mysql_engine/config.json --env-file /opt/student_score_mysql_engine/.env
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/student_score_mysql_engine/var
+TimeoutStartSec=30min
+
+[Install]
+WantedBy=multi-user.target
